@@ -13,18 +13,21 @@ public class HolidayController {
     @Autowired
     private HolidayService holidayService;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/holidays")
     public ResponseEntity<Object> getAllHolidays() {
 
         return new ResponseEntity<>(holidayService.getAllHolidays(), HttpStatus.OK);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/holidays/{id}")
     public ResponseEntity<Object> getHoliday(@PathVariable String id) {
 
         return new ResponseEntity<>(holidayService.getHoliday(id), HttpStatus.OK);
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/holidays")
     public ResponseEntity<Object> addHoliday(@RequestBody Holiday holiday) {
 
@@ -33,6 +36,7 @@ public class HolidayController {
 
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping("/holidays/{id}")
     public ResponseEntity<Object> updateHoliday(@RequestBody Holiday holiday) {
 
@@ -41,6 +45,7 @@ public class HolidayController {
 
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/holidays/{id}")
     public ResponseEntity<Object> deleteHoliday(@PathVariable String id) {
 
