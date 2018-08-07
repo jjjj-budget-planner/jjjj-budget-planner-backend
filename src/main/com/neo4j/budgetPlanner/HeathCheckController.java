@@ -1,4 +1,4 @@
-package com.neo4j.budgetPlanner;
+package main.com.neo4j.budgetPlanner;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

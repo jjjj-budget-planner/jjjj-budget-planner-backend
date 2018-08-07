@@ -1,11 +1,10 @@
-package com.neo4j.budgetPlanner;
+package main.com.neo4j.budgetPlanner;
 
+import main.com.neo4j.budgetPlanner.Holiday;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 public class HolidayController {

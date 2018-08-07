@@ -1,4 +1,4 @@
-package com.neo4j.budgetPlanner;
+package main.com.neo4j.budgetPlanner;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

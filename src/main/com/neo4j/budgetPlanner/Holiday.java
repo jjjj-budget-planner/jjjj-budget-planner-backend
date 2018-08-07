@@ -1,12 +1,14 @@
-package com.neo4j.budgetPlanner;
+package main.com.neo4j.budgetPlanner;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "holidays")
 public class Holiday {
 
     @Id
